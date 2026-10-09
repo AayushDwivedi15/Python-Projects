@@ -22,7 +22,7 @@ a = df.isna().sum()
 
 # CONVERTING TEXT TO DATETIME
 
-df['Date'] = pd.to_datetime(df['Date'])
+df['Date'] = pd.to_datetime(df['Date'], errors = 'coerce')
 
 # GROUPING TOTAL REVENUE BY CATEGORY AND GENDER
 
